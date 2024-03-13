@@ -23,13 +23,13 @@ if(isset($_POST['submit'])){
   $mail->isSMTP();
   $mail->Host = "smtp.gmail.com";
   $mail->SMTPAuth = true;
-  $mail->Username = "alyanbessie9@gmail.com"; // Ganti dengan email pengirim
-  $mail->Password = "zhpwxsfjxvtjcmvl"; // Ganti dengan password email pengirim
+  $mail->Username = "your9@gmail.com"; // Ganti dengan email pengirim
+  $mail->Password = "password"; // Ganti dengan password email pengirim
   $mail->SMTPSecure = 'tls';
   $mail->Port = 587;
 
   // Mengatur informasi pengirim dan penerima email
-  $mail->setFrom('alyanbessie9@gmail.com', 'Alyan Bessie');
+  $mail->setFrom('your@gmail.com', 'Your Name');
   $mail->addAddress($to);
 
   // Mengatur format email
